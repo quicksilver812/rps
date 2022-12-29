@@ -1,4 +1,4 @@
-const choice=(prompt("Enter your choice:"));
+const choice1=(prompt("Enter your choice:"));
 
 function randomString(strings) 
 {
@@ -7,6 +7,31 @@ function randomString(strings)
 }
 
 const strings = ['rock', 'paper', 'scissors'];
-console.log(randomString(strings)); 
+let choice2=randomString(strings);
 
-console.log(choice);
+//if(choice1!="rock"||choice1!="paper"||choice1!="scissors")
+//console.log("Wrong Input!");
+//else
+//{
+  console.log("Computer Choice: "+choice2); 
+  console.log("User Choice: "+choice1);
+
+  if(choice1=="rock"&&choice2=="scissors")
+  console.log("Player wins!");
+  else if(choice1=="scissors"&&choice2=="rock")
+  console.log("Computer wins!");
+
+  else if(choice1=="scissors"&&choice2=="paper")
+  console.log("Player wins!");
+  else if(choice1=="paper"&&choice2=="scissors")
+  console.log("Computer wins!");
+
+  else if(choice1=="paper"&&choice2=="rock")
+  console.log("Player wins!");
+  else if(choice1=="rock"&&choice2=="paper")
+  console.log("Computer wins!");
+
+  else
+  console.log("Draw!")
+
+//}
